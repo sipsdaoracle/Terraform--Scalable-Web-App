@@ -1,0 +1,11 @@
+vpc_id             = "vpc-05136f24b4b3ba92d"
+ami_id             = "ami-0b45ae66668865cd6"
+instance_type      = "t2.micro"
+instance_name      = "sips-ec2"
+availability_zones = ["us-east-1a", "us-east-1b", "us-east-1c"]
+subnet_ids         = ["subnet-01eec6539a0d7fb60", "subnet-0576208b268eb55e3", "subnet-0fc6489f885f11b3a"]
+min_size           = 1
+max_size           = 3
+desired_capacity   = 2
+launch_configuration_name   = "sips-launch-configuration"
+autoscaling_group_name      = "sips-asg"
